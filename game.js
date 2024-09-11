@@ -47,7 +47,7 @@ class HelpTable {
     for (let i = 0; i < this.moves.length; i++) {
       const row = [this.moves[i]];
       for (let j = 0; j < this.moves.length; j++) {
-        row.push(this.rules.getWinner(i, j));
+        row.push(this.rules.getWinner(j, i));
       }
       table.addRow(...row);
     }
