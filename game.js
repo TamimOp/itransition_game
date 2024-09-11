@@ -1,4 +1,4 @@
-const crypto = require("crypto");
+const crypto = require("node:crypto");
 const readline = require("readline");
 const AsciiTable = require("ascii-table");
 
