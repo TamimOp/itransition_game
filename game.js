@@ -14,7 +14,7 @@ class Crypto {
   }
 
   static generateHMAC(key, message) {
-    return crypto.createHmac("sha256", key).update(message).digest("hex");
+    return crypto.createHmac("sha3-256", key).update(message).digest("hex");
   }
 }
 
